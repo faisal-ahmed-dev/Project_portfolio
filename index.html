@@ -7,39 +7,194 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Personal Portfolio Website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Faisal Ahmed</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.00">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!-- or -->
-        <link rel="stylesheet"
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-    <!--  header   start   -->
-    <div id="header">
-        <a href="#" class="logo"><img src="image/logo.png" alt=""></a>
-        <div class="bx bx menu" id="menu-icon"></div>    
-
-    <ul class="navlist">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about"></a>ABOUT</li>
-        <li><a href="#portfolio"></a>PORTFOLIO</li>
-        <li><a href="#services"></a>SERVICES</li>
-        <li><a href="#contact"></a>CONTACT</li>
-    </ul>
-        <a href="#" class="top-btn">DOWNLOAD CV</a>
-
-
-    </div>
-    <!--  header   end   -->
 
         
-        <script src="script.js" async defer></script>
+       
+        <!-- Main Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/2189ff23c0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div id="header">
+            
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
+                </ul> 
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi,<br> I'm <span> Faisal Ahmed</span></h1>
+                <p>Welcome to this page</p> 
+
+            </div>
+        </div>
+        <!--        ABOUT SECTION           -->
+        <button onclick="topFunction()" id="myBtn">
+            <a href="#header"></a>
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="about_header">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Est quia ut quo voluptas dignissimos laudantium inventore eaque dolor, <br> pariatur dolorem velit, illo, earum fugiat voluptatem asperiores veniam corrupti placeat error.</p>
+                        <div class="about-sub-titles">
+                            <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                            <p class="tab-links"onclick="opentab('edu')">Education</p>
+                            <p class="tab-links"onclick="opentab('exp')">Experience</p>
+                        </div>
+
+                                <div class="tab-contents active-tab" id="skill">
+                                    <ul>
+                                        <li><span>UI/UX</span><br> Design web</li>
+                                        <li><span>WEB DEVELOPMENT</span><br> Web backend develop</li>
+                                        <li><span>APP DEVELOPMENT</span><br> Building apps</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="edu">
+                                    <ul>
+                                        <li><span>EDUCATION</span><br> Design web</li>
+                                        <li><span>WEB DEVELOPMENT</span><br> Web backend develop</li>
+                                        <li><span>APP DEVELOPMENT</span><br> Building apps</li>
+                                    </ul>
+                                </div>
+                               
+                                <div class="tab-contents" id="exp">
+                                    <ul>
+                                        <li><span>Experience</span><br> Design web</li>
+                                        <li><span>WEB DEVELOPMENT</span><br> Web backend develop</li>
+                                        <li><span>APP DEVELOPMENT</span><br> Building apps</li>
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--                SERVICE         -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">MY SERVICES</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>WEB design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis labore id animi obcaecati sequi eaque laboriosam nostrum fugit? Eaque architecto ab modi illum ducimus dolorem officia. Laboriosam, quam perspiciatis.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h2>APP design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis labore id animi obcaecati sequi eaque laboriosam nostrum fugit? Eaque architecto ab modi illum ducimus dolorem officia. Laboriosam, quam perspiciatis.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-file"></i>
+                        <h2>WEB develop</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis labore id animi obcaecati sequi eaque laboriosam nostrum fugit? Eaque architecto ab modi illum ducimus dolorem officia. Laboriosam, quam perspiciatis.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        PORTFOLIO       -->
+        <div id="portfolio">  
+            <div class="container">
+                <h1 class="port_header">MY WORK</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>SOCIAL MEDIA APP</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est, eligendi at dolore deleniti neque repudiandae fuga adipisci similique minus beatae cumque omnis dolorem aliquid cum nihil quo unde eos.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>MUSIC APP</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est, eligendi at dolore deleniti neque repudiandae fuga adipisci similique minus beatae cumque omnis dolorem aliquid cum nihil quo unde eos.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>ONLINE SHOPPING APP</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat est, eligendi at dolore deleniti neque repudiandae fuga adipisci similique minus beatae cumque omnis dolorem aliquid cum nihil quo unde eos.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+                    
+                
+            </div>
+
+        </div>
+
+        <!--        contact-->
+
+        <div id="contact">
+
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>012345678</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="your email"required>
+                            <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="copyright">
+                <p>Copyright &#169;  MADE BY Faisal Ahmed</p>
+            </div>
+        </div>
+
+        </div>
+
+      <script src="script.js"></script> 
+  
     </body>
 </html>
